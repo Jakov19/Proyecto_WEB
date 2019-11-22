@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVQ COMPONENTES | Contacto</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../formulario/js/validar.js"></script>
+
+    
+</head>
+<body>
+    <nav>
+
+        <div class="contenedorlogo" ><img class="logo" src="../logos/logo.svg"></div>                     
+        <div class="nav-menu">
+                <a class="nav-menu-item" href="index.html">Home</a>
+                <a class="nav-menu-item" href="novedades.html">Novedades</a>
+                <a class="nav-menu-item" href="por_que.html">¿Por qué Msi?</a>
+                <a class="nav-menu-item" href="contacto.html">Contacto</a> 
+        </div>
+    
+    </nav>
+
+
+
+    <section class="contenedor_formulario">
+        <div class="formulario">
+                <form action="../formulario/php/correo.php" method="post" onsubmit="return validarFormulario()"> 
+                        <label for="nombre">Nombre <span>*</span></label>
+                        <input id="nombre" type="text" id='nombre' name="nombre" value="" required />
+                        <label for="email">Correo electrónico <span>*</span></label>
+                        <input id="email" type="email" id='email' name="email" value="" required />
+						<label for="">Comentario <span>*</span></label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" required onkeypress="return limita(500);"></textarea>
+                        <label for="comentario"> Te quedan <span id="numCarac">500</span> carácteres</label>
+						<button id="alta" type="submit" class="formulario_boton" name="alta">Enviar</button>
+            
+                        
+            
+                    </form>
+
+        </div>
+        
+
+
+    </section>
+    
+
+
+    <footer>
+	<div>
+		<p>Fuentes:</p> 
+		<p>https://es.msi.com/</p>
+		<p>Photo by Damian Zaleski on Unsplash</p>
+	</div>
+	</footer>
+    
+</body>
+</html>
